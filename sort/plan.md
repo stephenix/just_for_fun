@@ -1,11 +1,14 @@
 wednesday
 quick sort link list
 
-thursday
-heap sort
-
 friday
-binary search
+quick sort link list2
 
 saturday
+heap sort
+
+saturday
+binary search
+
+sunday
 merge sort
