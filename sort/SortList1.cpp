@@ -10,7 +10,7 @@ struct ListNode {
 
 // swap node's value
 // two pointer: p q
-// begin+1...p: < pivot 
+// begin+1...p: <= pivot 
 // p+1...q: > pivot
 ListNode* Partition(ListNode* begin, ListNode* end) {
     int val = begin->val;
@@ -39,11 +39,9 @@ void QuickSort(ListNode* begin, ListNode* end) {
 ListNode* SortList(ListNode* head) {
     if (head == NULL || head->next == NULL)
         return head;
-    ListNode *end = head;
-    while (end->next != NULL)
-        end = end->next;
-    QuickSort(head, NULL);
-    return head;
+    ListNode *begin = head, *end = NULL;
+    QuickSort(begin, end);
+    return begin;
 }
 
 int main(void) {
