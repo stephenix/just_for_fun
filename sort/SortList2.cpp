@@ -1,5 +1,5 @@
 #include <iostream>
-// https://blog.csdn.net/wumuzi520/article/details/8078322
+// https://blog.csdn.net/cinderella_niu/article/details/43191627
 using namespace std;
 
 struct ListNode {
