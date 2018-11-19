@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
     string countAndSay(int n) {
@@ -32,3 +35,15 @@ public:
         return ret;
     }
 };
+
+int main(int argc, char** argv) {
+	Solution sol;
+	if (argc != 2)
+		return -1;
+	int n = *argv[1] - '0';
+	for (int i = 1; i <= n; i ++) {
+		string ret = sol.countAndSay(i);
+		cout << ret << endl;
+	}
+	return 0;
+}
